@@ -1,9 +1,8 @@
 {
-  "name": "shop-shared",
+  "name": "paulorsaf-shop-shared",
   "version": "0.0.1",
   "description": "",
-  "author": "",
-  "private": true,
+  "author": "Paulo alves",
   "license": "UNLICENSED",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
