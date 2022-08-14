@@ -6,7 +6,7 @@
   "license": "UNLICENSED",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["/dist"],
+  "files": ["/"],
   "scripts": {
     "prebuild": "rimraf dist",
     "prepublishOnly": "npm run build",
