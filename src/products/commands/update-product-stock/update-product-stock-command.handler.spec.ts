@@ -2,10 +2,9 @@ import { CqrsModule, EventBus } from '@nestjs/cqrs';
 import { Test, TestingModule } from '@nestjs/testing';
 import { UpdateProductStockCommandHandler } from './update-product-stock-command.handler';
 import { UpdateProductStockCommand } from './update-product-stock.command';
-import { ProductRepositoryMock } from '../../../../mocks/product-repository.mock';
-import { ProductRepository } from '../../../stocks/repositories/product.repository';
+import { ProductRepository } from '../../repositories/product.repository';
 import { NotFoundException } from '@nestjs/common';
-import { EventBusMock } from '../../../../mocks/event-bus.mock';
+import { EventBusMock } from '../../../mocks/event-bus.mock';
 import { ProductStockUpdatedEvent } from './events/product-stock-updated.event';
 
 describe('UpdateProductStockCommandHandler', () => {
@@ -75,3 +74,18 @@ describe('UpdateProductStockCommandHandler', () => {
   });
 
 });
+
+class ProductRepositoryMock {
+
+  updatedStockWith: any;
+
+  response: any;
+
+  findById(params: any) {
+      return this.response;
+  }
+  updateStockAmount(params: any) {
+      this.updatedStockWith = params;
+  }
+
+}
