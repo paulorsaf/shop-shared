@@ -1,12 +1,12 @@
 {
-  "name": "paulorsaf-shop-shared",
-  "version": "0.0.1",
+  "name": "shop-shared-server",
+  "version": "0.0.2",
   "description": "",
   "author": "Paulo alves",
   "license": "UNLICENSED",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["/"],
+  "files": ["/dist"],
   "scripts": {
     "prebuild": "rimraf dist",
     "prepublishOnly": "npm run build",
