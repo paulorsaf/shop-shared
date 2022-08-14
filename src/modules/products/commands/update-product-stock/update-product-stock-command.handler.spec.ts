@@ -4,7 +4,7 @@ import { UpdateProductStockCommandHandler } from './update-product-stock-command
 import { UpdateProductStockCommand } from './update-product-stock.command';
 import { ProductRepository } from '../../repositories/product.repository';
 import { NotFoundException } from '@nestjs/common';
-import { EventBusMock } from '../../../mocks/event-bus.mock';
+import { EventBusMock } from '../../../../../mocks/event-bus.mock';
 import { ProductStockUpdatedEvent } from './events/product-stock-updated.event';
 
 describe('UpdateProductStockCommandHandler', () => {
